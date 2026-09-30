@@ -1,6 +1,6 @@
 namespace:
-    name: <namespace-name>
-    ip: <namespace-ip>
-    ip_pmm: <namespace-ip-pmm>
-    ecs_id: <namespace-ecs-id>
-    ecs_token: <namespace-ecs-token>
+  name: aoutomation_namespace
+  ip: 127.12.12.0
+  ip_pmm: 127.0.0.1
+  ecs_id: cdokockso
+  ecs_token: cdcdccdddd
