@@ -1,0 +1,6 @@
+namespace:
+  name: customer-test-prod-orders_service
+  ip: 10.0.1.10
+  ip_pmm: 10.0.1.11
+  ecs_id: example-prod-id
+  ecs_token: example-prod-token
