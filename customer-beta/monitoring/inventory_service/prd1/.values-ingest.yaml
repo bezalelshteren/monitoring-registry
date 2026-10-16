@@ -1,0 +1,6 @@
+namespace:
+  name: customer-beta-prod-inventory_service
+  ip: 10.50.0.20
+  ip_pmm: 10.50.0.21
+  ecs_id: beta-prod-ecs-002
+  ecs_token: example-beta-prod-token
