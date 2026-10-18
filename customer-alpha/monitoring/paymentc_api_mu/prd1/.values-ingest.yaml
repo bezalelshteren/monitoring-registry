@@ -1,0 +1,6 @@
+namespace:
+  name: customer-alpha-prd-paymentc_api_mu
+  ip: 10.30.0.10
+  ip_pmm: 10.30.0.11
+  ecs_id: alpha-prod-ecs-001
+  ecs_token: example-prod-token-001
