@@ -1,0 +1,6 @@
+namespace:
+  name: devopss-dev-payenhhjhjh_apis23
+  ip: YOUR_MONITORING_IP
+  ip_pmm: YOUR_PMM_IP
+  ecs_id: YOUR_ECS_ID
+  ecs_token: YOUR_ECS_TOKEN
