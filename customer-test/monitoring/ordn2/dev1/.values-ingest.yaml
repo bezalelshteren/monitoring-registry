@@ -1,0 +1,6 @@
+namespace:
+  name: customer-test-dev-ordn2
+  ip: None
+  ip_pmm: 
+  ecs_id: csaaaaaaaascaccacsacacasa
+  ecs_token: 123456
