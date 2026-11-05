@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: dev1-customer-test-customer-test-dev-ordn991478
+  namespace: blackops-argocd-tenants
+  labels:
+    blackops/managed: "true"
+    blackops/tenant: customer-test
+spec:
+  project: customer-test-dev
+  source:
+    repoURL: http://gitlab.apps/
+    targetRevision: master
+    path: dev1
+    helm:
+      releaseName: dev1-dev-customer-test-dev-ordn991478
+      valueFiles:
+        - values.yaml
+  destination:
+    name: dev1
+    namespace: customer-test-dev-ordn991478

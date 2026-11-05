@@ -1,0 +1,27 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: customer-test-dev
+  namespace: blackops-argocd
+spec:
+  clusterResourceWhitelist:
+    - group: "*"
+      kind: "*"
+  namespaceResourceBlacklist:
+    - group: "*"
+      kind: ResourceQuota
+  roles:
+    - groups:
+        - group: platform-dev
+      name: admin
+      policies:
+        - p, proj:customer-test-dev:admin, applications, *, customer-test-dev/*, allow
+        - p, proj:customer-test-dev:admin, exec, create, get, customer-test-dev/*, allow
+  destinations:
+    - namespace: customer-test-*
+      name: 
+      server: https://kubernetes.default.svc
+    - name: 
+      server: https://kubernetes.default.svc
+  sourceRepos:
+    - http://gitlab.apps/

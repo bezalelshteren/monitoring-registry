@@ -1,0 +1,43 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: dev1-customer-test-
+  namespace: blackops-argocd-tenants
+  labels:
+    blackops/managed: "true"
+    blackops/monitored: "true"
+    blackops/tenant: customer-test
+    blackops/part-of: "argocd"
+
+spec:
+  syncPolicy:
+    preserveResourcesOnDeletion: true
+
+  generators:
+    - git:
+        repoURL: http://gitlab.apps/
+        revision: master
+        directories:
+          - path: 'dev/*'
+
+  template:
+    metadata:
+      name: '{{path.basename}}'
+      labels:
+        blackops/managed: "true"
+        blackops/monitored: "true"
+        blackops/tenant: customer-test
+        blackops/part-of: '{{path.basename}}'
+
+    spec:
+      project: customer-test-dev
+      source:
+        repoURL: http://gitlab.apps/
+        targetRevision: master
+        path: '{{path}}'
+        directory:
+          recurse: true
+
+      destination:
+        name: dev1
+        namespace: '{{namespace}}-*'
