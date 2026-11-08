@@ -1,0 +1,6 @@
+namespace:
+  name: custonnmer-te-dev-orders-ser11vnb
+  ip: 10.10.10.10
+  ip_pmm: 
+  ecs_id: ecs-dev-001
+  ecs_token: dev-token-example
