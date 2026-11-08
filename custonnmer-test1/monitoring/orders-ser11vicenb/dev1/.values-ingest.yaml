@@ -1,0 +1,6 @@
+namespace:
+  name: custonnmer-test1-dev-orders-ser11vicenb
+  ip: 10.10.10.10
+  ip_pmm: 
+  ecs_id: ecs-dev-001
+  ecs_token: dev-token-example
