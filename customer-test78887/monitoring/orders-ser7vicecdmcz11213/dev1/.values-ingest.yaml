@@ -1,0 +1,6 @@
+namespace:
+  name: customer-test78887-dev-orders-ser7vicecdmcz11213
+  ip: 10.10.10.100
+  ip_pmm: 
+  ecs_id: ecs-customer-test-001
+  ecs_token: example-ecs-token
