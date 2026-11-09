@@ -1,0 +1,6 @@
+namespace:
+  name: customer-test-dev-orders-servicecdcz
+  ip: 10.10.10.100
+  ip_pmm: 
+  ecs_id: ecs-customer-test-001
+  ecs_token: example-ecs-token
